@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Jagan Bala
+# ⚡ JAGADEESH.B
 ### **Systems & Hardware-Security Architect • Post-Quantum Cryptography • Distributed AI**
 
 [![GitHub followers](https://img.shields.io/github/followers/jaganbala2007?label=Followers&style=for-the-badge&color=238636&logo=github)](https://github.com/jaganbala2007)
