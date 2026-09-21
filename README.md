@@ -1,20 +1,21 @@
 <div align="center">
 
 # ⚡ JAGADEESH.B
-### **Systems & Hardware-Security Architect • Post-Quantum Cryptography • Distributed AI**
+### **Systems & VLSI Silicon Architect • Hardware Root of Trust • Post-Quantum Cryptography**
 
 [![GitHub followers](https://img.shields.io/github/followers/jaganbala2007?label=Followers&style=for-the-badge&color=238636&logo=github)](https://github.com/jaganbala2007)
 [![Smart India Hackathon](https://img.shields.io/badge/SIH%202026-Finalist%20%2326211-f39c12?style=for-the-badge&logo=target)](https://github.com/jaganbala2007/ubip-x)
+[![VLSI Cadence Virtuoso](https://img.shields.io/badge/VLSI-Cadence%20Virtuoso%20%7C%20DRC%20%26%20LVS-007ACC?style=for-the-badge&logo=microchip)](https://github.com/jaganbala2007/cmos-inverter-cadence-virtuoso)
 [![NIST PQC](https://img.shields.io/badge/NIST%20PQC-ML--KEM%20%7C%20ML--DSA-7928CA?style=for-the-badge&logo=shield)](https://github.com/jaganbala2007/ubip-x)
 [![License](https://img.shields.io/badge/Open%20Source-MIT-0070f3?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <br/>
 
-> *"Bridging the physical-to-digital chasm through Silicon-to-Cloud co-design, deterministic edge execution, post-quantum resilience, and autonomous multi-agent intelligence."*
+> *"Bridging the physical-to-digital chasm through Silicon-to-Cloud co-design: from transistor-level layouts in Cadence Virtuoso to deterministic edge execution, post-quantum resilience, and autonomous multi-agent intelligence."*
 
 <br/>
 
-[🚀 Live Systems & Demos](#-flagship-architectures) • [🛠️ Technical Arsenal](#-core-technical-arsenal) • [📊 Live GitHub Metrics](#-github-engineering-activity) • [📬 Connect](#-executive-contact)
+[🚀 Flagship Architectures](#-flagship-architectures) • [🔬 VLSI & Silicon Engineering](#-vlsi--silicon-architecture-cadence-virtuoso-asicfpga--physical-design) • [🛠️ Technical Arsenal](#-core-technical-arsenal) • [📊 Activity Metrics](#-github-engineering-activity) • [📬 Connect](#-executive-contact)
 
 ---
 
@@ -22,9 +23,37 @@
 
 ## 📌 Executive Summary
 
-I specialize in **High-Assurance Systems Architecture**, uniting **Silicon / Hardware Root of Trust** (VLSI, ESP32, FPGA), **Post-Quantum Cryptography** (NIST FIPS 203/204), and **Real-Time Edge Intelligence** (Neuromorphic SNNs, Multi-Agent Swarms, 3D WebGL Digital Twins).
+I specialize in **High-Assurance Systems & Silicon Architecture**, uniting **Silicon / Hardware Root of Trust** (VLSI CMOS Layouts, Cadence Virtuoso, Verilog, FPGA, ESP32-S3), **Post-Quantum Cryptography** (NIST FIPS 203/204), and **Real-Time Edge Intelligence** (Neuromorphic SNNs, Multi-Agent Swarms, 3D WebGL Digital Twins).
 
-Unlike traditional software engineers who operate strictly in user-space, my work spans the **complete computational stack**: from transistor layouts in **Cadence Virtuoso** and gate-level logic in **Verilog**, up through sub-100ms embedded firmware, zero-knowledge verifiable ledgers, and distributed enterprise cloud platforms.
+Unlike software engineers who operate strictly in user-space, my work spans the **complete computational stack**: from custom transistor polygonal layouts in **Cadence Virtuoso** and gate-level logic in **Verilog**, up through sub-100ms embedded firmware, zero-knowledge verifiable ledgers, and distributed enterprise platforms.
+
+---
+
+## 🔬 VLSI & Silicon Architecture (Cadence Virtuoso, ASIC/FPGA & Physical Design)
+
+> *"True system security, energy efficiency, and low-latency performance start at the silicon floorplan. I design, simulate, and lay out integrated circuits with sub-micron DRC/LVS physical verification and FPGA digital synthesis."*
+
+### 1. Custom IC Full-Custom Layout & Physical Verification (Cadence Virtuoso)
+* **EDA Toolchain**: Cadence Virtuoso Schematic Editor, Virtuoso Layout Suite (XL/GXL), Spectre Circuit Simulator, Assura / Calibre DRC & LVS.
+* **Physical Design Standards**: Tape-out grade polygon routing, active-area enclosures, well-tap placement to prevent latch-up, poly-silicon gate routing, and multi-layer metallization ($M_1, M_2$).
+* **Standard Cell Layout Suite**:
+  * [**CMOS Inverter (`cmos-inverter-cadence-virtuoso`)**](https://github.com/jaganbala2007/cmos-inverter-cadence-virtuoso): Optimal $\beta$-ratio sizing ($W_p/W_n \approx 2-3$) for symmetric switching thresholds ($V_M = V_{DD}/2$), maximum noise margins ($NM_H, NM_L$), and balanced rise/fall propagation delay ($t_{pLH} \approx t_{pHL}$).
+  * [**CMOS NAND Gate (`cmos-nand-gate-cadence-virtuoso`)**](https://github.com/jaganbala2007/cmos-nand-gate-cadence-virtuoso): Parallel PMOS pull-up network with stacked NMOS pull-down chain, sized for body-effect mitigation and parasitic diffusion capacitance minimization.
+  * [**CMOS NOR Gate (`cmos-nor-gate-cadence-virtuoso`)**](https://github.com/jaganbala2007/cmos-nor-gate-cadence-virtuoso): Series PMOS pull-up configuration engineered for minimal channel on-resistance and symmetric drive strength.
+* **Parametric & Corner Verification**:
+  * **DRC (Design Rule Checking)**: Zero geometric spacing, minimum width, or enclosure violations across active, poly, contact, and metal layers.
+  * **LVS (Layout vs. Schematic)**: 100% netlist matching, pin-to-pin continuity, and transistor aspect ratio parity.
+  * **Transient & DC Corner Analysis**: Spectre simulation across TT, FF, SS process corners, varying temperatures (-40°C to 125°C), and supply voltage fluctuations ($V_{DD} \pm 10\%$).
+
+### 2. Digital RTL Design, FPGA Emulation & Timing Closure
+* [**Virtual-FPGA-Lab (`Virtual-FPGA-Lab`)**](https://github.com/jaganbala2007/Virtual-FPGA-Lab): Synthesizable Verilog HDL architectures for digital pipelines, synchronous finite-state machines (FSMs), and register-transfer level (RTL) arithmetic processing units.
+* **Clock Domain Crossing (CDC) & Timing Closure**: Multi-flop synchronizers, FIFO-based clock domain crossing, Setup ($t_{su}$) and Hold ($t_h$) slack closure, and Static Timing Analysis (STA).
+* **FPGA Synthesis**: Target mapping to Xilinx Artix-7/Zynq architectures, optimizing LUT utilization, DSP48 slice distribution, and BRAM allocation.
+
+### 3. Silicon Root-of-Trust & Hardware Cryptographic Acceleration
+* **Hardware Security Modules (HSM)**: Co-designing dedicated cryptographic hardware pipelines (canonical SHA-256 state machines, lattice-based modular polynomial multipliers for NIST PQC).
+* **Physical Unclonable Functions (PUF)**: Leveraging SRAM power-up state variability and ring oscillator frequency jitter for tamper-evident silicon device identity.
+* **Side-Channel Defense**: Balancing dynamic power profiles and clock jitter to mitigate Differential Power Analysis (DPA) and timing attacks.
 
 ---
 
@@ -69,9 +98,15 @@ Unlike traditional software engineers who operate strictly in user-space, my wor
       <p>Ultra-low-latency financial security framework safeguarding high-frequency transactions against "Harvest Now, Decrypt Later" quantum threats using hybrid Kyber/Dilithium channels.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>🔬 <a href="https://github.com/jaganbala2007/Virtual-FPGA-Lab">Silicon & VLSI Design Suite</a></h3>
-      <p><b>FPGA Synthesis & Cadence Virtuoso Custom IC Layouts</b></p>
-      <p>Custom CMOS inverter, NAND, and NOR cell physical layouts designed and verified in Cadence Virtuoso with DRC/LVS clean tape-out standards and FPGA logic pipelines.</p>
+      <h3>🔬 <a href="https://github.com/jaganbala2007/cmos-inverter-cadence-virtuoso">Cadence Virtuoso VLSI Suite</a></h3>
+      <p><b>Custom IC Layouts, Spectre Simulation & DRC/LVS</b></p>
+      <p>Standard cell library physical layouts (Inverter, NAND, NOR) designed in Cadence Virtuoso with DRC/LVS clean verification, parasitic extraction, and transient corner simulations.</p>
+      <p>
+        <a href="https://github.com/jaganbala2007/cmos-inverter-cadence-virtuoso"><b>Inverter</b></a> • 
+        <a href="https://github.com/jaganbala2007/cmos-nand-gate-cadence-virtuoso"><b>NAND</b></a> • 
+        <a href="https://github.com/jaganbala2007/cmos-nor-gate-cadence-virtuoso"><b>NOR</b></a> • 
+        <a href="https://github.com/jaganbala2007/Virtual-FPGA-Lab"><b>FPGA Lab</b></a>
+      </p>
     </td>
   </tr>
 </table>
@@ -84,11 +119,13 @@ Unlike traditional software engineers who operate strictly in user-space, my wor
 
 | Domain | High-Impact Technologies & Frameworks |
 | :--- | :--- |
-| **Hardware & Silicon** | `ESP32-S3` `Verilog/VHDL` `Cadence Virtuoso (CMOS/VLSI)` `FPGA` `RTOS` `UART/SPI/I2C` `C/C++` |
-| **Cybersecurity & PQC** | `NIST FIPS 203 (ML-KEM)` `NIST FIPS 204 (ML-DSA)` `Zero-Knowledge Proofs (ZK-SNARKs)` `SHA-256` `ECDSA` |
+| **VLSI & Physical IC Design** | `Cadence Virtuoso (Layout XL/GXL)` `Spectre Simulator` `Assura / Calibre DRC & LVS` `PEX Parasitics` `Standard Cell Design` `CMOS PDKs (45nm/90nm/180nm)` `Latch-up Prevention` |
+| **Digital ASIC & FPGA** | `Verilog HDL` `SystemVerilog` `RTL Synthesis` `Static Timing Analysis (STA)` `Clock Domain Crossing (CDC)` `Xilinx Vivado` `FPGA Emulation` `FSM Optimization` |
+| **Embedded & Silicon Security** | `ESP32-S3` `Hardware Root of Trust (RoT)` `PUF (Physical Unclonable Functions)` `DPA Side-Channel Mitigation` `C/C++` `RTOS` `UART/SPI/I2C` |
+| **Cybersecurity & PQC** | `NIST FIPS 203 (ML-KEM)` `NIST FIPS 204 (ML-DSA)` `Zero-Knowledge Proofs (ZK-SNARKs)` `SHA-256 Hardware State Machines` `ECDSA` |
 | **Artificial Intelligence** | `Neuromorphic SNNs` `Federated Learning (FedAvg)` `Multi-Agent Cognitive Swarms` `PyTorch` `TypeScript` |
 | **Distributed Systems** | `Solidity` `EVM Smart Contracts` `Hardhat` `Ethers.js` `Merkle Trees` `Zero-Trust Protocols` |
-| **Visualization & Full-Stack** | `Three.js` `WebGL` `React 18` `TypeScript` `Node.js / Express` `TailwindCSS` `WebSockets` |
+| **3D Graphics & Full-Stack** | `Three.js` `WebGL Shaders` `React 18` `TypeScript` `Node.js / Express` `TailwindCSS` `WebSockets` |
 | **DevOps & Cloud** | `GitHub Actions CI/CD` `Docker` `Linux / POSIX` `SQLite Edge Queues` `Git` |
 
 </div>
@@ -113,18 +150,20 @@ Unlike traditional software engineers who operate strictly in user-space, my wor
 ## 🏆 Hackathon & Engineering Milestones
 
 - 🥇 **Smart India Hackathon (SIH 2026) Finalist**: Problem Statement ID `26211` — Ministry of Education's Innovation Cell (AICTE).
-- 🔬 **NIST Post-Quantum Cryptography Integration**: Deployed live hybrid lattice-based cryptography (`ML-KEM-768` and `ML-DSA-65`) ahead of standard enterprise timelines.
-- ⚡ **Physical-to-Digital Trust Protocol**: Engineered on-chip deterministic hashing algorithms ensuring identical cryptographic hashes across heterogeneous edge runtimes.
+- 🔬 **Silicon-to-Cloud Integration**: Tape-out clean custom CMOS cell layouts (Inverter, NAND, NOR) verified with DRC/LVS in Cadence Virtuoso and integrated with hardware trust anchors.
+- ⚡ **NIST Post-Quantum Cryptography Integration**: Deployed live hybrid lattice-based cryptography (`ML-KEM-768` and `ML-DSA-65`) ahead of standard enterprise timelines.
+- 🛡️ **Hardware Root of Trust Protocol**: Engineered on-chip deterministic hashing algorithms ensuring identical cryptographic hashes across heterogeneous edge runtimes.
 
 ---
 
-## 💼 What Tier-1 Engineering Teams Gain
+## 💼 Why Tier-1 Semiconductor & Systems Giants Hire Me
 
-> *I combine deep silicon-level intuition with modern distributed software craftsmanship, solving challenges at the boundaries where physical hardware meets high-throughput cloud networks.*
+> *I bridge the physical reality of silicon with high-throughput distributed software, solving challenges where transistor physics meets high-concurrency cloud networks.*
 
-- **Zero Ramp-Up on Complex Systems**: From low-level memory constraints on microcontrollers to high-concurrency Node.js event loops and WebGL shaders.
-- **Security-First Mindset**: Cryptographic defense, memory safety, threat modeling, and circuit breaker patterns built-in by design.
-- **Demonstrated Ownership**: Proven end-to-end delivery from initial mathematical concept to production-grade, jury-tested deployments.
+- **Silicon-Level Intuition**: Deep command of device physics, threshold voltages, second-order effects (velocity saturation, DIBL, channel-length modulation), and sub-micron parasitic effects.
+- **Hardware-Software Co-Design**: Eliminating impedance mismatches between hardware accelerators, firmware drivers, and user-space applications.
+- **Security-First Mindset**: Cryptographic defense, memory safety, side-channel mitigation, and circuit breaker patterns built-in from the transistor floorplan up.
+- **Demonstrated Ownership**: Proven end-to-end delivery from schematic design and polygon layout to production-grade, jury-tested deployments.
 
 ---
 
@@ -132,9 +171,10 @@ Unlike traditional software engineers who operate strictly in user-space, my wor
 
 - **GitHub**: [@jaganbala2007](https://github.com/jaganbala2007)
 - **Direct Email**: [jaganbala2007@gmail.com](mailto:jaganbala2007@gmail.com)
+- **Target Roles**: **VLSI Design Engineer • ASIC / Physical Design Architect • Silicon Security Engineer • Systems Engineer**
 - **Location**: India • Available for Global Roles (On-site / Hybrid / Remote)
-- **Status**: 🟢 **Open to Tier-1 High-Impact Engineering Roles & High-Package Technical Positions**
+- **Status**: 🟢 **Actively Open to High-Package Technical Offers & Tier-1 Silicon/Systems Engineering Opportunities**
 
 <div align="center">
-  <sub>Designed with precision. Architected for performance. Built for the quantum era.</sub>
+  <sub>Designed with sub-micron precision. Architected for performance. Built for the quantum era.</sub>
 </div>
